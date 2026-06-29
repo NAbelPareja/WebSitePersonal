@@ -9,6 +9,10 @@ import {
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 
+import p1iMac from "../assets/p1-iMac.png";
+import p2iMac from "../assets/p2-iMac.png";
+import p3iMac from "../assets/p3-iMac.png";
+
 export const Proyectos = () => {
   return (
     <div className="text-center">
@@ -22,7 +26,7 @@ export const Proyectos = () => {
         <div>
           <img
             className="rounded-md"
-            src="src/assets/p1-iMac.png"
+            src={p1iMac}
             alt="proyecto1"
           />
         </div>
@@ -70,7 +74,7 @@ export const Proyectos = () => {
         <div>
           <img
             className="rounded-md"
-            src="src/assets/p3-iMac.png"
+            src={p3iMac}
             alt="proyecto2"
           />
         </div>
@@ -118,7 +122,7 @@ export const Proyectos = () => {
         <div>
           <img
             className="rounded-md"
-            src="src/assets/p2-iMac.png"
+            src={p2iMac}
             alt="proyecto3"
           />
         </div>
