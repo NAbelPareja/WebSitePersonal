@@ -9,6 +9,11 @@ import {
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 
+import { SiDotnet, SiSwagger, SiPostman, SiJsonwebtokens    } from "react-icons/si";
+import { DiMsqlServer } from "react-icons/di";
+
+import pb1 from "../assets/pb1Beer.png";
+import pb1_1 from "../assets/Captura_Postman_Beer.png";
 import p1iMac from "../assets/p1-iMac.png";
 import p2iMac from "../assets/p2-iMac.png";
 import p3iMac from "../assets/p3-iMac.png";
@@ -22,6 +27,43 @@ export const Proyectos = () => {
       <p className="text-indigo-200 px-5">
         Algunos de los proyectos mas relevantes que he desarrollado
       </p>
+
+      
+      <div className="flex flex-col lg:flex-row justify-between px-5 md:px-30 py-10 gap-10">
+        <div className = "w-full lg:w-5/3">
+          <img
+            className="rounded-md "
+            src={pb1_1}
+            alt="proyecto1"
+          />
+        </div>
+        <div className="w-full lg:w-2/3 flex flex-col gap-5 "> 
+          <h2 className="text-2xl">API REST para Gestión de Cervezas</h2>
+          <p className="text-indigo-200">
+            API REST robusta desarrollada para el control y catalogación de productos cerveceros, marcas y proveedores. Diseñada bajo una arquitectura limpia utilizando el patrón Repository y transferencia segura con DTOs. Cuenta con un sistema completo de autenticación y autorización mediante JWT y persistencia en SQL Server..
+          </p>
+          <div className="flex flex-row justify-between">
+            <SiDotnet className="text-3xl text-indigo-500 mx-auto" />
+            <DiMsqlServer className="text-3xl text-red-500 mx-auto" />
+            <SiJsonwebtokens  className="text-3xl text-zinc-300 mx-auto"/>
+            <SiSwagger  className="text-3xl text-green-400 mx-auto" />
+            <SiPostman  className="text-3xl text-orange-500 mx-auto" />
+          </div>
+          <div className="flex flex-row gap-10 px-auto ">
+            <button className="bg-zinc-800 text-indigo-100 text-xl px-3 py-1 shadow-md shadow-zinc-700 border-none rounded-md  hover:bg-zinc-950">
+              <a
+                href="https://github.com/NAbelPareja/MiApisBeerBackend"
+                target="_blank"
+                className="flex flex-row"
+              >
+                <FaGithub className="my-auto mx-1" />
+                Git Hub
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr className="text-indigo-300 mx-50" />
 
       <div className="flex flex-col lg:flex-row justify-between px-5 md:px-30 py-10 gap-10">
         <div>
